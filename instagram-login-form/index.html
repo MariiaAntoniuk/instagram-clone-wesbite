@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="main">
+       <div class="left">
+           <div class="phone_img">
+               <img src="img/images1.png" alt="">
+
+               <!-- image slider -->
+               <div class="img_slider owl-carousel">
+                   <div class="img">
+                       <img src="img/foto3.png" alt="">
+                   </div>
+                   <div class="img">
+                       <img src="img/foto4.png" alt="">
+                   </div>
+                   <div class="img">
+                       <img src="img/foto1.png" alt="">
+                   </div>
+                   <div class="img">
+                       <img src="img/foto2.png" alt="">
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="right">
+           <div class="form">
+               <div class="logo">
+                   <img src="img/logo.png" alt="">
+               </div>
+               <form action="#">
+                   <input type="text" placeholder="Phone number, username, or email">
+                   <input type="password" placeholder="password">
+                   <button>Log in</button>
+               </form>
+               <span class="line">OR</span>
+               <a class="login_by_fb" href="#"><i class="fa-brands fa-square-facebook"></i> Log in with Facebook</a>
+               <a href="#" class="forgot_pass">Forgot password?</a>
+           </div>
+           <div class="signup">
+               <p>Don't have an account? <a href="#">Sing up</a></p>
+           </div>
+           <p>Get the app.</p>
+           <div class="other_socials">
+               <div class="img">
+                   <img src="img/fotof.png" alt="">
+               </div>
+               <div class="img">
+                   <img src="img/fotof1.png" alt="">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- footer here -->
+   <footer>
+       <ul>
+           <li><a href="#">Meta</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Jobs</a></li>
+           <li><a href="#">Help</a></li>
+           <li><a href="#">API</a></li>
+           <li><a href="#">Privacy</a></li>
+           <li><a href="#">Terms</a></li>
+           <li><a href="#">Top Accounts</a></li>
+           <li><a href="#">Locations</a></li>
+           <li><a href="#">Instagram Lite</a></li>
+           <li><a href="#">Contact Uploading & Non-User</a></li>
+       </ul>
+       <a href="#" class="en">English <i class="fa-solid fa-angle-down"></i></a>
+       <small>&copy; Instagram from Meta</small>
+   </footer>
+
+  <script src="jquery-3.7.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+      $(document).ready(function (){
+          $('.owl-carousel').owlCarousel({
+              items: 1,
+              autoplay: true,
+              loop: true,
+              autoplayTimeout: 5000,
+              animateIn: 'fadeIn',
+              animateOut: 'fadeOut'
+          });
+      });
+  </script>
+</body>
+</html>
